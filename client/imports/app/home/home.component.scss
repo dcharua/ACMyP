@@ -1,0 +1,62 @@
+p{
+  font-family: 'MinionPro'
+}
+
+
+#background{
+  background-size: 100%;
+  height: -webkit-fill-available;
+  background-image: url(/images/home.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color:#3B436A;
+
+  .logo{
+    padding-top: 15%;
+    text-align: left;
+  }
+  .logo img {
+  width: 500px;
+  }
+  .continuar{
+   position: absolute;
+   width: 100px;
+   height: 20px;
+   z-index: 15;
+   bottom: 10%;
+   left: 50%;
+   font-size: 1.3em;
+   margin: 0px 0 0 -60px;
+   color: #3B436A;  }
+  p{
+    font-family: 'MinionProBold';
+    margin: 0;
+  }
+  .flechaDown{
+    width: 40px;
+    position: absolute;
+    left: 30%;
+    margin-top: -10px;
+  }
+}
+
+#about{
+  background-size: 100%;
+  height: -webkit-fill-available;
+  background-color:#3B436A;
+
+  h5{
+    text-align: center;
+    color: #fff;
+    font-family: 'MinionProBold';
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  p{
+    color:#fff;
+    font-family: 'MinionPro';
+    margin: 2% 13%;
+    font-size: 1.4em;
+    text-align: justify;
+  }
+}

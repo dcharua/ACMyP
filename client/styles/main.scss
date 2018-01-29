@@ -1,0 +1,67 @@
+//font
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/fonts/MinionPro-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProBold';
+  src: url('/fonts/MinionPro-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProMedium';
+  src: url('/fonts/MinionPro-Bold-MediumIt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProBoldIt';
+  src: url('/fonts/MinionPro-BoldIt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProIt';
+  src: url('/fonts/MinionPro-It.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProSemiBold';
+  src: url('/fonts/MinionPro-Semibold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProSemiBoldIt';
+  src: url('/fonts/MinionPro-SemiboldIt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  font-size: 0;
+}
+
+body{
+  font-size: 14px !important;
+}
+
+p{
+  font-family: 'MinionPro'
+}

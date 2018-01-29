@@ -1,0 +1,72 @@
+//font
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/fonts/MinionPro-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProBold';
+  src: url('/fonts/MinionPro-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProMedium';
+  src: url('/fonts/MinionPro-Bold-MediumIt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProBoldIt';
+  src: url('/fonts/MinionPro-BoldIt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProIt';
+  src: url('/fonts/MinionPro-It.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProSemiBold';
+  src: url('/fonts/MinionPro-Semibold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionProSemiBoldIt';
+  src: url('/fonts/MinionPro-SemiboldIt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.loader {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    z-index: 1;
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid #4C535F;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+p{
+  font-family: 'MinionPro';
+}

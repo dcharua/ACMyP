@@ -1,0 +1,29 @@
+p{
+  font-family: MinionProBold;
+  text-align: left;
+  text-transform: uppercase;
+  color: 	#3B436A !important;
+  font-size: 1.3em;
+}
+
+a{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#navbar {
+    height: 60px;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    z-index: 99;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+  }
+
+  .navitem{
+    margin-left: auto;
+  }
