@@ -24,6 +24,58 @@ a{
     -ms-transition: 0.5s;
   }
 
-  .navitem{
-    margin-left: auto;
-  }
+.navitem{
+  margin-left: auto;
+}
+
+.mydropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.mydropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3B436A;
+    min-width: 596px;
+    box-shadow: 0px 8px 16px 0px rgba(59, 67, 106, 0.2);
+    z-index: 1;
+    right: -294px;
+    p{
+      color:#fff !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      font-size: 12px;
+      font-family: 'MinionProBold';
+      text-transform: none;
+    }
+    a{
+      padding: 0 !important;
+      margin: 0 0 10px 0 !important
+    }
+}
+
+.mydropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.mydropdown-content a:hover { p{color: #000 !important;}}
+
+.mydropdown:hover .mydropdown-content {
+    display: block;
+}
+
+.flechaDown{
+  width: 37px;
+  height: 31px;
+  position: absolute;
+  top: 14px;
+  left: 83px;
+}
+
+a:hover{
+  p{color: #000 !important;}
+}

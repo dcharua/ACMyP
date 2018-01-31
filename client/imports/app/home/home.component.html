@@ -1,10 +1,11 @@
 <div id="background">
   <div class="logo"><img id ="logohome" src="/logos/LOGO.png" alt="ACMyP" ></div>
-  <div class="continuar">
+  <a href="#about" class="continuar">
     <p>CONTINUAR</p>
     <img class ="flechaDown" src="/icons/FlechaAbajo.png" alt="ACMyP" >
-  </div>
+  </a>
 </div>
+
 <div id="about">
   <h5 style="padding-top:70px;"> Arias, Charua, Macías & Prum, es una firma de abogados cuyos miembros</h5>
   <h5>ofrecen un servicio legal de alta calidad, cuyo enfoque es brindar una</h5>
@@ -20,8 +21,104 @@
     diferentes industrias y sectores, previniendo contingencias y manteniendo una
     comunicación abierta que nos permite informar cambios legislativos que podrían afectar
     los intereses de nuestros clientes</p>
-    <p>Combinamos tradición e innovación en la prestación de servicios profesionales, de la cual
+    <p style="padding-bottom:70px;">Combinamos tradición e innovación en la prestación de servicios profesionales, de la cual
     deriva nuestro principio fundamental de reconocimiento como asesores permanentes de
     nuestros clientes, lo que les permite obtener beneficios reales y directos.</p>
   </div>
+
+  <!-- La portada del cover (ej. /images/covers/flirt.jpg) deben de ser de 900 x 900 px -->
+  <div id="projects">
+    <h1>PRINCIPALES ÁREAS DE PRÁCTICA</h1>
+    <p >Imilisque telutura, P. Satium iurem optissimus, que facieni hilicta terede quitis conlos
+    intractus cum ut audes dem et? Issoliu que di, firmis hosus, sed con tam aventiam hil
+    hilness endericum sultum ina, nihilicit alemer accital eruncul vilicas cum te con Ita, num
+    vid re poporunteris ocura det iamuntum P. Que is, Cas igit pra L. Habem tem tu iam iam
+    det? Nossulius, quonostis, ublius veri pere comniquam deris</p>
+      <div class="container">
+          <div class="row" id="projects-wrapper">
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/project', 'flirt']">
+                      <img class="box-image" src="/images/tecnologia.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Tecnología</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/project', 'valiara']" title="Valiara">
+                      <img class="box-image" src="/images/propiedad.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Propiedad Intelectual y Entretenimiento</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/project', 'kii']">
+                      <img class="box-image" src="/images/civil.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Civil y Mercantil</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/project', 'new-fiction-films']">
+                      <img class="box-image" src="/images/tele.jpeg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Telecomunicaciones</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/project', 'iniciativa-luz']">
+                      <img class="box-image" src="/images/farma.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Farmacéutico</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/project', 'luuma']">
+                      <img class="box-image" src="/images/fusion.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Fusiones y  Adquisiciones</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="abogados">
+    <div style="width: 30%;margin-left: 35%;">
+    <h3>ABOGADOS</h3>
+    <a href="#about" class="abogado">
+      <h2 style="padding-top:70px;">OSCAR</h2>
+      <p>Arias Corona</p>
+    </a>
+    <a href="#about" class="abogado">
+      <h2>Elias</h2>
+      <p>Charua García</p>
+    </a>
+    <a href="#about" class="abogado">
+      <h2>David</h2>
+      <p>Macías León</p>
+    </a>
+    <a href="#about" class="abogado">
+      <h2>Daniel</h2>
+      <p style="padding-bottom:70px;">Prum Charua</p>
+    </a>
+  </div>
+</div>
 </div>

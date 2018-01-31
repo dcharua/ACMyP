@@ -5,27 +5,79 @@
 		</a>
 
 
-		<a[routerLink]="['/Nosotros']" >
+		<a[routerLink]="['/nosotros']" >
 			<p id="nosotros">Nosotros</p>
 		</a>
 
 
-		<a[routerLink]="['/Servicios']" >
-			<p id="servicios">Servicios</p>
-		</a>
+		<div class="mydropdown">
+			<a style="margin-right:30px;"[routerLink]="['/Servicios']" >
+				<p id="servicios">Servicios</p>   <img class ="flechaDown" src="/icons/FlechaAbajo.png" >
+			</a>
+		<div class="mydropdown-content">
+			<div class="row">
+				<div style="padding-top:20px; padding-left: 20px;"class=" col s6">
+					<a[routerLink]="['/link']" >
+						<p id="link">Derecho Civil, Familiar y Mercantil</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Derecho Penal</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Propiedad Intelectual y Entretenimiento</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Privacidad y Datos Personales</p>
+					</a>
+				</div>
+				<div style="padding-top:20px;" class="col s3">
+					<a[routerLink]="['/link']" >
+						<p id="link">Telecomunicaciones</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Farmacéutico</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Tecnología</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Litigio y Consultoría</p>
+					</a>
+				</div>
+				<div style="padding-top:20px;" class=" col s3">
+					<a[routerLink]="['/link']" >
+						<p id="link">Corporativo</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Derecho Administrativo</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Comercio Internacional</p>
+					</a>
+					<a[routerLink]="['/link']" >
+						<p id="link">Fusiones y Adquisiciones</p>
+					</a>
+					<a style="margin:0 !important"[routerLink]="['/link']" >
+						<p id="link">Derecho Inmobiliario</p>
+					</a>
 
+				</div>
+			</div>
 
-		<a [routerLink]="['/Abogados']" >
+		</div>
+	</div>
+
+		<a [routerLink]="['/abogados']" >
 			<p id="abogados">Abogados</p>
 		</a>
 
 
-		<a[routerLink]="['/Bolg']" >
+		<a[routerLink]="['/bolg']" >
 			<p id="blog">Blog</p>
 		</a>
 
 
-		<a style="margin-right:30px;" [routerLink]="['/Contacto']" >
+		<a style="margin-right:30px;" [routerLink]="['/contacto']" >
 			<p id="contacto">Contacto</p>
 		</a>
 	</div>

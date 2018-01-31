@@ -2,17 +2,17 @@ module.exports = {
   servers: {
     one: {
       // TODO: set host address, username, and authentication method
-      host: '18.217.133.73',
-      username: 'ubuntu',
-      pem: '../../valiara.pem'
-      // password: 'server-password'
+      host: 'mx46',
+      username: 'acmypcom',
+      // pem: '../../valiara.pem'
+      password: 'zqFoD750n1'
       // or neither for authenticate from ssh-agent
     }
   },
 
   app: {
     // TODO: change app name and path
-    name: 'valiara',
+    name: 'acmyp',
     path: '../',
 
     servers: {
@@ -26,7 +26,7 @@ module.exports = {
     env: {
       // TODO: Change to your app's url
       // If you are using ssl, it needs to start with https://
-      ROOT_URL: 'http://test.com',
+      ROOT_URL: 'http://myapp.com',
       MONGO_URL: 'mongodb://localhost/meteor',
     },
 

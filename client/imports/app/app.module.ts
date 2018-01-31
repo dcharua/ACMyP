@@ -7,6 +7,11 @@ import { AppComponent } from "./app.component";
 import { routes } from './app.routes';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ContactoComponent } from './contacto/contacto.component';
+
+
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,6 +20,9 @@ import { HomeComponent } from './home/home.component';
         AppComponent,
         NavbarComponent,
         HomeComponent,
+        NosotrosComponent,
+        ContactoComponent,
+        FooterComponent
     ],
     // Entry Components
     entryComponents: [

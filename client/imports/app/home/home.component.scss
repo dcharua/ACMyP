@@ -5,6 +5,19 @@ p{
 
 #background{
   background-size: 100%;
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
   height: -webkit-fill-available;
   background-image: url(/images/home.jpg);
   background-position: top;
@@ -27,7 +40,9 @@ p{
    left: 50%;
    font-size: 1.3em;
    margin: 0px 0 0 -60px;
-   color: #3B436A;  }
+   color: #3B436A;
+   cursor: pointer;
+   }
   p{
     font-family: 'MinionProBold';
     margin: 0;
@@ -42,7 +57,6 @@ p{
 
 #about{
   background-size: 100%;
-  height: -webkit-fill-available;
   background-color:#3B436A;
 
   h5{
@@ -58,5 +72,124 @@ p{
     margin: 2% 13%;
     font-size: 1.4em;
     text-align: justify;
+  }
+}
+
+#projects {
+	background-color: #F0F0F0;
+	min-height: 900px;
+  padding-bottom: 50px;
+
+  h1{
+    text-align: center;
+    padding-top: 70px;
+    color: #3B436A;
+    font-size: 2.0em;
+    font-family: 'MinionProBold';
+    text-decoration: underline;
+  }
+  p{
+    color: #000;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'MinionPro';
+
+  }
+	#projects-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		background-color: #FFFFFF;
+		-webkit-box-shadow: 0px 5px 9px 0px rgba(179,179,179,1);
+		-moz-box-shadow: 0px 5px 9px 0px rgba(179,179,179,1);
+		box-shadow: 0px 5px 9px 0px rgba(179,179,179,1);
+	}
+
+	.box {
+    	position: relative;
+    	padding: 0;
+
+    	.box-image {
+        object-fit: cover;
+        max-width: 100%;
+        height: 300px;
+        vertical-align: middle;
+      }
+
+    	.box-wrap {
+        height: 300px;
+        object-fit: cover;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        opacity: 0.0;
+        background-color: rgba(33, 33, 33, 0.7);
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+
+    		.text {
+    			margin: 0 auto;
+    			text-align: center;
+    		}
+
+    		p {
+    			font-family: 'MinionPro';
+          margin: 0;
+          padding: 0;
+    			color: #FFFFFF;
+    		}
+    	}
+
+    	.box-wrap:hover {
+    		opacity: 1.0;
+    	}
+	}
+}
+
+#abogados{
+  background-image: url(/images/abogados.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #3B436A;
+  height: max-content;
+
+  h3{
+    font-size: 28px;
+    text-align: center;
+    padding-top: 50px;
+    color: #000;
+    text-decoration: underline;
+    font-family: 'MinionProBold';
+  }
+  a:hover{
+    h2{
+    color: #3B436A;
+   }
+   p{
+   color: #3B436A;
+  }
+  }
+
+  h2{
+    font-size: 60px;
+    font-family: 'MinionProIt';
+    color: #000;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 28px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-family: 'MinionProIt';
   }
 }
