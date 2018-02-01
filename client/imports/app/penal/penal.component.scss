@@ -1,0 +1,52 @@
+#navline{
+  height: 62px;
+  position: absolute;
+  background: #fff;
+  top:0;
+  width: 100%;
+}
+#penal{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75%;
+  background-image: url(/images/penal.jpg);
+  background-position: top;
+    .flechaDown{
+      width: 60px;
+      position: absolute;
+      left: 47%;
+      bottom: 1%;
+    }
+}
+
+.mybox{
+  background-color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  h2{
+    padding-top: 50px;
+    color:  #3B436A;
+    font-size: 30px;
+    font-family: 'MinionProBold';
+    text-align: center;
+  }
+  p{
+    color: #000;
+    font-size: 20px;
+    font-family: 'MinionPro';
+    text-align: left;
+    margin: 15px 0;
+  }
+}
+
+#penalb{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
+  background-image: url(/images/penal.jpg);
+  background-position: bottom;
+}
