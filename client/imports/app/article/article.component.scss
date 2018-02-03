@@ -1,0 +1,60 @@
+#home{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px ;
+  background-image: url(/images/blog.jpg);
+  background-position: center;
+    .flechaDown{
+      width: 60px;
+      position: absolute;
+      left: 47%;
+      bottom: 1%;
+    }
+}
+
+
+.mybox{
+  background-color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  h2{
+    padding-top: 50px;
+    color:  #3B436A;
+    font-size: 30px;
+    font-family: 'MinionProBold';
+    text-align: center;
+  }
+  h3{
+    font-size: 20px;
+    font-family: 'MinionProBold';
+    padding-top: 10px;
+    color: #3e3e3e;
+  }
+  p{
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'MinionPro';
+    text-align: left;
+    text-align: justify;
+  }
+  hr{
+    color: #3B436A;
+    border: 1px solid;
+  }
+  .btn, .btn-large {
+    margin-top: 30px;
+    background-color: #3B436A;
+  }
+  .btn:hover, .btn-large:hover {
+    background-color: #22263e !important;
+  }
+  .date{
+    margin-right: -150px;
+    text-align: right;
+    text-transform: UPPERCASE;
+    font-size: 16px;
+  }
+}

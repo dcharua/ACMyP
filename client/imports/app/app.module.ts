@@ -25,6 +25,8 @@ import { CharuaComponent } from './charua/charua.component';
 import { AriasComponent } from './arias/arias.component';
 import { MaciasComponent } from './macias/macias.component';
 import { PrumComponent } from './prum/prum.component';
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 
 
@@ -62,6 +64,8 @@ import { FooterComponent } from './footer/footer.component';
         AriasComponent,
         MaciasComponent,
         PrumComponent,
+        BlogComponent,
+        ArticleComponent,
         FooterComponent,
 
     ],

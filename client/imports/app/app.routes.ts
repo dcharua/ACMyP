@@ -20,6 +20,8 @@ import { CharuaComponent } from './charua/charua.component';
 import { AriasComponent } from './arias/arias.component';
 import { MaciasComponent } from './macias/macias.component';
 import { PrumComponent } from './prum/prum.component';
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 
 
@@ -47,6 +49,10 @@ export const routes: Route[] = [
 	{ path: 'arias', component: AriasComponent },
 	{ path: 'macias', component: MaciasComponent },
 	{ path: 'prum', component: PrumComponent },
+	{ path: 'abogados', component: CharuaComponent },
+	{ path: 'blog', component: BlogComponent },
+	{ path: 'article', component: ArticleComponent },
+
 
 
 

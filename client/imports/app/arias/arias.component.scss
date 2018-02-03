@@ -6,13 +6,34 @@
   height: 75%;
   background-image: url(/images/abogados.jpg);
   background-position: center;
-    .flechaDown{
-      width: 60px;
-      position: absolute;
-      left: 47%;
-      bottom: 1%;
+
+    a:hover{
+      h2{
+      color: #000;
+     }
+     p{
+     color: #000;
     }
-}
+    }
+
+    h2{
+      font-size: 60px;
+      font-family: 'MinionProIt';
+      color: #3B436A;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #3B436A;
+      font-size: 28px;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      font-family: 'MinionProIt';
+    }
+  }
+
 
 .mybox{
   background-color: #fff;
@@ -56,4 +77,8 @@
     text-align: left;
     margin-top: 0 !important;
   }
+}
+
+#charua{
+  display: none;
 }
