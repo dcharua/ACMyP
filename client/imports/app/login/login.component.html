@@ -1,0 +1,31 @@
+<div class="giveSpace"></div>
+<div class="yellowbox">
+  <h1>"Words are a lens to focus one’s mind."</h1>
+  <h5>Ayn Rand</h5>
+</div>
+
+<div class="myroundbox logbox">
+  <form class="col s12 center-align" [formGroup]="addForm" (ngSubmit)="login()">
+    <div class="row" id="log">
+      <div class="col s12">
+        <p class="strongp">account</p>
+        <div class="input-field">
+          <input placeholder="Email:" id="username" type="text" class=" myform" formControlName="email">
+        </div>
+        <div class="input-field">
+          <input placeholder="Password:" id="password" type="password" class=" myform" formControlName="password">
+        </div>
+      </div>
+    </div>
+    <button type="submit" style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">open_in_browser</i>log in</button>
+  </form>
+</div>
+
+
+<div id="error" class="col s12 m5 offset-m6">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <h1>{{error}}!</h1>
+</div>
+
+
+<footer></footer>

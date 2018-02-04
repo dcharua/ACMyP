@@ -22,7 +22,9 @@ import { MaciasComponent } from './macias/macias.component';
 import { PrumComponent } from './prum/prum.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { EscribirComponent } from './escribir/escribir.component';
 
 
 
@@ -51,10 +53,10 @@ export const routes: Route[] = [
 	{ path: 'prum', component: PrumComponent },
 	{ path: 'abogados', component: CharuaComponent },
 	{ path: 'blog', component: BlogComponent },
-	{ path: 'article', component: ArticleComponent },
-
-
-
+	{ path: 'article/:id', component: ArticleComponent },
+	{ path: 'entrar', component: LoginComponent },
+	{ path: 'nuevousuario', component: SignupComponent },
+	{ path: 'escribir', component: EscribirComponent },
 
 	{ path: '**', component: HomeComponent }
 ];

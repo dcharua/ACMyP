@@ -1,5 +1,10 @@
 <div class="valign-wrapper" id="navbar">
 	<div class="navitem">
+		<div id="userin" *ngIf="user" style="position: absolute; left: 10px; top: 10px;" >
+			<button  style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn" (click)="logout()"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">exit_to_app</i>Logout</button>
+			<button [routerLink]="['/escribir']" style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">border_color</i>Escribir</button>
+			<span style="vertical-align:middle;">{{ user.emails[0].address }}</span>
+		</div>
 		<a [routerLink]="['/']" >
 			<p id ="inicio">Inicio</p>
 		</a>

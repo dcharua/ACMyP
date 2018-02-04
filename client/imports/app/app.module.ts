@@ -27,7 +27,11 @@ import { MaciasComponent } from './macias/macias.component';
 import { PrumComponent } from './prum/prum.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { EscribirComponent } from './escribir/escribir.component';
 
+import { AUTH_DECLARATIONS } from "./auth/index";
 
 
 
@@ -66,6 +70,9 @@ import { FooterComponent } from './footer/footer.component';
         PrumComponent,
         BlogComponent,
         ArticleComponent,
+        LoginComponent,
+        SignupComponent,
+        EscribirComponent,
         FooterComponent,
 
     ],

@@ -1,101 +1,88 @@
-<div id="home">
-  <div class="mycircle">
+
+  <div id="home">
+    <div class="mycircle">
+      <div class="row last">
+        <div class="col s8 offset-s2">
+          <p class="mas"> INSIGHT</p>
+          <p class="date">{{articles[0].date}}</p>
+          <h2 class="titulo"> {{articles[0].title}}</h2>
+          <hr>
+          <!-- <p>{{article.text}}</p> -->
+          <p [routerLink]="['/article']"  style="cursor:pointer; margin-top:30px !important;"class = "mas"> LEER MÁS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="mybox">
     <div class="row">
-      <div class="col s8 offset-s2">
-        <p class="mas"> INSIGHT</p>
-        <p class="date">28 de enero 2018</p>
-        <h2 class="titulo"> Titulo de la nota</h2>
-        <hr>
-        <p>this is an extract maximin 2 lines</p>
-        <p [routerLink]="['/article']"  style="cursor:pointer; margin-top:30px !important;"class = "mas"> LEER MÁS</p>
+      <div class="col m4 offset-m2 even">
+        <div [routerLink]="['/article','article_id']" style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{article.date}}</p>
+          </div>
+          <h3>{{article.title}}</h3>
+          <p class="texto">{{article.text}}</p>
+        </div>
+      </div>
+
+      <div class="col m4 odd">
+        <div [routerLink]="['/article','article_id']" style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{article.date}}</p>
+          </div>
+          <h3>{{article.title}}</h3>
+          <p class="texto">{{article.text}}</p>
+        </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col m4 offset-m2">
+        <div [routerLink]="['/article']"  style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">News</p>
+            <p class="fecha">28 Enero 2018</p>
+          </div>
+          <h3>Titulo de la nota</h3>
+          <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
+            especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
+            Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
+            Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
+            representado activamente a empresas de México, Estados Unidos, América Latina y
+            Europa.</p>
+        </div>
+      </div>
+
+      <div class="col m4">
+        <div [routerLink]="['/article']" style="margin-left:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">News</p>
+            <p class="fecha">28 Enero 2018</p>
+          </div>
+          <h3>Titulo de la nota</h3>
+          <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
+            especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
+            Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
+            Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
+            representado activamente a empresas de México, Estados Unidos, América Latina y
+            Europa.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row background">
+      <div class="col m6 first">
+        <div [routerLink]="['/article']"  class="newsbox inback">
+          <div class="newsline">
+            <p class="news">News</p>
+            <p class="fecha">28 Enero 2018</p>
+          </div>
+          <h3>{{article.title}}</h3>
+          <p class="texto">{{article.text}}</p>
+        </div>
+      </div>
+    <div style="padding-bottom:50px;"></div>
   </div>
-</div>
-<div class="mybox">
-  <div class="row">
-    <div class="col m4 offset-m2">
-      <div [routerLink]="['/article']" style="margin-right:40px;"class="newsbox">
-        <div class="newsline">
-          <p class="news">News</p>
-          <p class="fecha">28 Enero 2018</p>
-        </div>
-        <h3>Titulo de la nota</h3>
-        <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-          especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-          Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-          Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-          representado activamente a empresas de México, Estados Unidos, América Latina y
-          Europa.</p>
-      </div>
-    </div>
-
-    <div class="col m4">
-      <div [routerLink]="['/article']" style="margin-left:40px;"class="newsbox">
-        <div class="newsline">
-          <p class="news">News</p>
-          <p class="fecha">28 Enero 2018</p>
-        </div>
-        <h3>Titulo de la nota</h3>
-        <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-          especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-          Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-          Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-          representado activamente a empresas de México, Estados Unidos, América Latina y
-          Europa.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col m4 offset-m2">
-      <div [routerLink]="['/article']"  style="margin-right:40px;"class="newsbox">
-        <div class="newsline">
-          <p class="news">News</p>
-          <p class="fecha">28 Enero 2018</p>
-        </div>
-        <h3>Titulo de la nota</h3>
-        <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-          especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-          Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-          Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-          representado activamente a empresas de México, Estados Unidos, América Latina y
-          Europa.</p>
-      </div>
-    </div>
-
-    <div class="col m4">
-      <div [routerLink]="['/article']" style="margin-left:40px;"class="newsbox">
-        <div class="newsline">
-          <p class="news">News</p>
-          <p class="fecha">28 Enero 2018</p>
-        </div>
-        <h3>Titulo de la nota</h3>
-        <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-          especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-          Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-          Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-          representado activamente a empresas de México, Estados Unidos, América Latina y
-          Europa.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row background">
-    <div class="col m6">
-      <div [routerLink]="['/article']"  class="newsbox inback">
-        <div class="newsline">
-          <p class="news">News</p>
-          <p class="fecha">28 Enero 2018</p>
-        </div>
-        <h3>Titulo de la nota</h3>
-        <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-          especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-          Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-          Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-          representado activamente a empresas de México, Estados Unidos, América Latina y
-          Europa.</p>
-      </div>
-    </div>
-  <div style="padding-bottom:50px;"></div>
-</div>
+</div> -->

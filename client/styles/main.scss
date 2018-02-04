@@ -57,6 +57,14 @@ body, html {
   width: 100%;
   font-size: 0;
 }
+
+.btn, .btn-large {
+  background-color: #3B436A !important;
+}
+.btn:hover, .btn-large:hover {
+  background-color: #22263e !important;
+}
+
 .loader {
     position: absolute;
     left: 45%;
