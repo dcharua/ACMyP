@@ -4,4 +4,5 @@ export interface Article {
   title: any;
   text: any,
   date:any,
+  fecha: any
 }

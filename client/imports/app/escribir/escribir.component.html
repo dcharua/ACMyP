@@ -34,15 +34,15 @@
 <div id="ver">
   <div class="myroundbox">
     <tr>
-      <th  style="width: 10%;">Autor</th>
-        <th  style="width: 10%;">Titulo</th>
-     <th  style="width: 70%;">Texto</th>
+      <th  style="width: 25%;">Autor</th>
+        <th  style="width: 40%;">Titulo</th>
+     <th  style="width: 25%;">fecha</th>
      <th>Eliminar</th>
    </tr >
     <tr  *ngFor="let article of articles | async"  >
      <td>{{article.autor}}</td>
-     <td>{{article.titulo}}</td>
-     <td>{{article.text}}</td>
+     <td>{{article.title}}</td>
+     <td>{{article.fecha}}</td>
      <td><button (click)="borrar(article._id)" style="font-size: 15px;padding-right: 15px;" class="waves-effect waves-light btn"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">delete</i>Borrar</button></td>
    </tr>
   </div>

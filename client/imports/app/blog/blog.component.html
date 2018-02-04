@@ -1,88 +1,85 @@
 
   <div id="home">
     <div class="mycircle">
-      <div class="row last">
-        <div class="col s8 offset-s2">
+      <div *ngIf="art0" class="row">
+        <div  class="col s8 offset-s2">
           <p class="mas"> INSIGHT</p>
-          <p class="date">{{articles[0].date}}</p>
-          <h2 class="titulo"> {{articles[0].title}}</h2>
+          <p class="date">{{art0.fecha}}</p>
+          <h2 class="titulo"> {{art0.title}}</h2>
           <hr>
-          <!-- <p>{{article.text}}</p> -->
-          <p [routerLink]="['/article']"  style="cursor:pointer; margin-top:30px !important;"class = "mas"> LEER MÁS</p>
+          <p>{{art0.text}}</p>
+          <p [routerLink]="['/article', art0._id]"  style="cursor:pointer; margin-top:20px !important;"class = "mas"> LEER MÁS</p>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="mybox">
-    <div class="row">
-      <div class="col m4 offset-m2 even">
-        <div [routerLink]="['/article','article_id']" style="margin-right:40px;"class="newsbox">
+  <div class="mybox">
+    <div *ngIf="art1" class="row">
+      <div class="col m4 offset-m2">
+        <div style="margin-right:40px;"class="newsbox">
           <div class="newsline">
             <p class="news">news</p>
-            <p class="fecha">{{article.date}}</p>
+            <p class="fecha">{{art1.fecha}}</p>
           </div>
-          <h3>{{article.title}}</h3>
-          <p class="texto">{{article.text}}</p>
+          <h3>{{art1.title}}</h3>
+          <p class="texto">{{art1.text}}</p>
+          <button [routerLink]="['/article', art1._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
         </div>
       </div>
 
-      <div class="col m4 odd">
-        <div [routerLink]="['/article','article_id']" style="margin-right:40px;"class="newsbox">
+      <div *ngIf="art2" class="col m4 ">
+        <div  style="margin-right:40px;"class="newsbox">
           <div class="newsline">
             <p class="news">news</p>
-            <p class="fecha">{{article.date}}</p>
+            <p class="fecha">{{art2.fecha}}</p>
           </div>
-          <h3>{{article.title}}</h3>
-          <p class="texto">{{article.text}}</p>
+          <h3>{{art2.title}}</h3>
+          <p class="texto">{{art2.text}}</p>
+          <button [routerLink]="['/article', art2._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
         </div>
       </div>
     </div>
 
-    <div class="row">
+    <div *ngIf="art3" class="row">
       <div class="col m4 offset-m2">
-        <div [routerLink]="['/article']"  style="margin-right:40px;"class="newsbox">
+        <div style="margin-right:40px;"class="newsbox">
           <div class="newsline">
-            <p class="news">News</p>
-            <p class="fecha">28 Enero 2018</p>
+            <p class="news">news</p>
+            <p class="fecha">{{art3.fecha}}</p>
           </div>
-          <h3>Titulo de la nota</h3>
-          <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-            especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-            Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-            Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-            representado activamente a empresas de México, Estados Unidos, América Latina y
-            Europa.</p>
+          <h3>{{art3.title}}</h3>
+          <p class="texto">{{art3.text}}</p>
+          <button [routerLink]="['/article', art3._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
         </div>
       </div>
 
-      <div class="col m4">
-        <div [routerLink]="['/article']" style="margin-left:40px;"class="newsbox">
+      <div  *ngIf="art4" class="col m4 ">
+        <div  style="margin-right:40px;"class="newsbox">
           <div class="newsline">
-            <p class="news">News</p>
-            <p class="fecha">28 Enero 2018</p>
+            <p class="news">news</p>
+            <p class="fecha">{{art4.fecha}}</p>
           </div>
-          <h3>Titulo de la nota</h3>
-          <p class="texto">Elías Charua García es socio fundador de Arias, Charua, Macías & Prum, S.C., se
-            especializa en Derecho Penal, Contratos, Derecho Sanitario, Publicidad, Derecho
-            Administrativo y codirige las áreas de Propiedad Intelectual, Derecho del
-            Entretenimiento, Farmacéutica y Resolución de Controversias. El Licenciado Charua ha
-            representado activamente a empresas de México, Estados Unidos, América Latina y
-            Europa.</p>
+          <h3>{{art4.title}}</h3>
+          <p class="texto">{{art4.text}}</p>
+          <button [routerLink]="['/article', art4._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="row background">
-      <div class="col m6 first">
+      <div *ngIf="art5" class="col m6 first">
         <div [routerLink]="['/article']"  class="newsbox inback">
           <div class="newsline">
             <p class="news">News</p>
-            <p class="fecha">28 Enero 2018</p>
+            <p class="fecha">{{art5.fecha}}</p>
           </div>
-          <h3>{{article.title}}</h3>
-          <p class="texto">{{article.text}}</p>
+          <h3>{{art5.title}}</h3>
+          <p class="texto">{{art5.text}}</p>
+          <button [routerLink]="['/article', art5._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+
         </div>
       </div>
     <div style="padding-bottom:50px;"></div>
   </div>
-</div> -->
+</div>

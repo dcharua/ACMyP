@@ -60,6 +60,7 @@ export class EscribirComponent implements OnInit {
 				text: this.escribirForm.controls.text.value,
 				title: this.escribirForm.controls.title.value,
 				date: moment().format(),
+				fecha: moment().format('LL'),
 			})
     }
   }

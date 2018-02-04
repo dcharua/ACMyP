@@ -6,12 +6,6 @@
   height: 500px ;
   background-image: url(/images/blog.jpg);
   background-position: center;
-    .flechaDown{
-      width: 60px;
-      position: absolute;
-      left: 47%;
-      bottom: 1%;
-    }
 }
 
 
@@ -25,6 +19,7 @@
     font-size: 30px;
     font-family: 'MinionProBold';
     text-align: center;
+    margin-bottom: 15px;
   }
   h3{
     font-size: 20px;
