@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
 	public icons: Array<String>;
 	constructor(private router: Router) {}
 	ngOnInit(){
-		$(".button-collapse").sideNav();
+		$(".button-collapse").sideNav({closeOnClick: true});
 	}
 
 		logout() {

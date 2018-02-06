@@ -66,9 +66,10 @@ body, html {
 }
 
 .loader {
-    position: absolute;
-    left: 45%;
-    top: 40%;
+  position:absolute; /*it can be fixed too*/
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
     z-index: 1;
     border: 12px solid #f3f3f3;
     border-top: 12px solid #3B436A;
@@ -115,6 +116,9 @@ p{
 }
 
 @media  screen and (max-width : 500px)  {
+  .continuar{
+    bottom:5%;
+  }
   .mybox{
     padding-left: 10% !important;
     padding-right: 10% !important;
@@ -126,7 +130,7 @@ p{
     }
   }
   #abogados{
-    height: 70% !important;
+    height: 100% !important;
     .row{
       padding-top: 50px !important;
     }

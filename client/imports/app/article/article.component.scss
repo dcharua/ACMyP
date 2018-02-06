@@ -3,7 +3,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px ;
+  height: 450px ;
   background-image: url(/images/blog.jpg);
   background-position: center;
 }
@@ -51,5 +51,35 @@
     text-align: right;
     text-transform: UPPERCASE;
     font-size: 16px;
+  }
+}
+
+#mobile{display: none;}
+
+@media  screen and (max-width : 500px)  {
+  #info{display: none;}
+  #mobile{
+    display: block;
+    padding: 0 10%;
+    position: absolute;
+    top: 70px;
+    h2{
+      color: #2B436A;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'MinionProBold';
+    }
+    h3{
+      font-size: 18px;
+      font-family: 'MinionProBold';
+      padding-top: 10px;
+      color: #3e3e3e;
+      margin-top: 20px;
+    }
+   .date{
+     right: 20px;
+     bottom: -14px;
+     position: absolute;
+    }
   }
 }
