@@ -79,3 +79,47 @@ a{
 a:hover{
   p{color: #000 !important;}
 }
+
+#mobile{
+  display: none;
+}
+
+.side-nav li>a{
+  color: #3B436A !important;
+  font-family: 'MinionProBold' !important;
+}
+
+.myul{
+  background-color: #3B436A !important;
+}
+
+.dropdown-content li{
+  color: #fff !important;
+  font-family: 'MinionProBold';
+  margin-left: 20px;
+  a{
+    color: #fff !important;
+    font-size: 12px !important;
+  }
+}
+.arrowMob{
+  width: 35px;
+  height: 34px;
+  float: right;
+  margin-top: 5px;
+}
+
+@media  screen and (max-width : 992px)  {
+  #navbar{display: none;}
+
+  #mobile{
+    display: block;
+
+  }
+  a{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: 'MinionProBold';
+  }
+}

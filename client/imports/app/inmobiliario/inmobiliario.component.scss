@@ -49,3 +49,10 @@
   background-image: url(/images/inmobiliario.jpg);
   background-position: bottom;
 }
+
+@media  screen and (max-width : 1024px)  {
+  #inmobiliario{
+    height: 65%;
+  }
+  #inmobiliariob{ display: none;}
+}

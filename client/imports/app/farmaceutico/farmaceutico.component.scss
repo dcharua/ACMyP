@@ -49,3 +49,10 @@
   background-image: url(/images/farma.jpg);
   background-position: bottom;
 }
+
+@media  screen and (max-width : 1024px)  {
+  #farmaceutico{
+    height: 65%;
+  }
+  #farmaceuticob{ display: none;}
+}

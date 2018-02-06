@@ -42,3 +42,37 @@
     margin: 0;
   }
 }
+
+@media  screen and (max-width : 768px)  {
+  #contacto{
+    .logo{
+      padding-top: 40%;
+      padding-left: 5%;
+      text-align: left;
+    }
+    .logo img {
+    width: 400px;
+    }
+  }
+}
+
+@media  screen and (max-width : 500px)  {
+  #contacto{
+    .logo{
+      padding-top: 50%;
+      padding-left: 5%;
+      text-align: left;
+    }
+    .logo img {
+    width: 300px;
+    }
+  }
+
+}
+@media  screen and (max-width : 350px)  {
+  #contacto{
+    .logo img {
+    width: 200px;
+    }
+  }
+}

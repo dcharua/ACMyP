@@ -50,3 +50,9 @@
   background-position: bottom;
   background-attachment: fixed;
 }
+@media  screen and (max-width : 1024px)  {
+  #privacidad{
+    height: 65%;
+  }
+  #privacidadb{ display: none;}
+}

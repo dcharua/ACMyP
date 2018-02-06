@@ -49,3 +49,10 @@
   background-image: url(/images/corporativo.jpg);
   background-position: bottom;
 }
+
+@media  screen and (max-width : 1024px)  {
+  #corporativo{
+    height: 65%;
+  }
+  #corporativob{ display: none;}
+}

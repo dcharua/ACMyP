@@ -184,3 +184,69 @@ p{
     font-family: 'MinionProIt';
   }
 }
+
+@media  screen and (max-width : 768px)  {
+  #background{
+    .logo{
+      padding-top: 40%;
+      padding-left: 5%;
+      text-align: left;
+    }
+    .logo img {
+    width: 400px;
+    }
+  }
+}
+
+@media  screen and (max-width : 500px)  {
+  #background{
+    .logo{
+      padding-top: 50%;
+      padding-left: 5%;
+      text-align: left;
+    }
+    .logo img {
+    width: 300px;
+    }
+  }
+  #about{
+    h5{
+      font-size: 18px;
+      padding: 0 20px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  #projects{
+    h1{
+      font-size: 20px;
+    }
+    .box {
+      .box-image {
+        height: 200px !important;
+      }
+      .box-wrap {
+        height: 200px !important;
+      }
+    }
+  }
+  #abogados{
+    h3{
+      font-size: 24px;
+    }
+    h2{
+      font-size:40px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
+@media  screen and (max-width : 350px)  {
+  #background{
+    .logo img {
+    width: 200px;
+    }
+  }
+}

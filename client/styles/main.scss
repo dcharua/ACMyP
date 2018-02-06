@@ -96,5 +96,48 @@ body{
 }
 
 p{
-  font-family: 'MinionPro'
+  font-family: 'MinionPro';
+}
+
+@media  screen and (max-width : 768px)  {
+  .mybox{
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+
+    p{
+      text-align: justify !important;
+    }
+  }
+
+  #navline{
+    display: none !important;
+  }
+}
+
+@media  screen and (max-width : 500px)  {
+  .mybox{
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    h2{
+      font-size: 20px !important;
+    }
+    p{
+      font-size: 13px !important;
+    }
+  }
+  #abogados{
+    height: 70% !important;
+    .row{
+      padding-top: 50px !important;
+    }
+    .nopadding{
+      padding: 0 !important;
+    }
+    h2{
+      font-size: 40px !important;
+    }
+    p{
+      font-size: 20px !important;
+    }
+  }
 }

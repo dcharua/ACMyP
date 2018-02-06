@@ -15,3 +15,22 @@
     padding-top: 10px;
   }
 }
+
+@media  screen and (max-width : 500px)  {
+  #footer{
+    height: 100%;
+
+    img{
+      width: 70px;
+      position: relative;
+      right: -25px;
+      top: -25px;
+    }
+    .pMob{
+      margin-left:12px !important;
+    }
+    .row{
+      margin-bottom: 0 !important;
+    }
+  }
+}

@@ -49,3 +49,10 @@
   background-image: url(/images/tecnologia.jpg);
   background-position: bottom;
 }
+
+@media  screen and (max-width : 1024px)  {
+  #tecnologia{
+    height: 65%;
+  }
+  #tecnologiab{ display: none;}
+}

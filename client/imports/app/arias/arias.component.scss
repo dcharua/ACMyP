@@ -78,7 +78,19 @@
     margin-top: 0 !important;
   }
 }
-
-#charua{
-  display: none;
+@media  screen and (max-width : 500px)  {
+  .mybox{
+    h2{
+      font-size: 40px !important;
+    }
+    h4{
+      font-size: 14px !important;
+    }
+    h3{
+      font-size: 24px !important;
+    }
+    h5{
+      font-size: 16px !important;
+    }
+  }
 }

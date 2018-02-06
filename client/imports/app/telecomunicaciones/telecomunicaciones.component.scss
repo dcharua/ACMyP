@@ -50,3 +50,10 @@
   background-image: url(/images/tele.jpeg);
   background-position: bottom;
 }
+
+@media  screen and (max-width : 1024px)  {
+  #telecomunicaciones{
+    height: 65%;
+  }
+  #telecomunicacionesb{ display: none;}
+}

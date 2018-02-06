@@ -49,3 +49,10 @@
   background-image: url(/images/penal.jpg);
   background-position: bottom;
 }
+
+@media  screen and (max-width : 1024px)  {
+  #penal{
+    height: 65%;
+  }
+  #penalb{ display: none;}
+}

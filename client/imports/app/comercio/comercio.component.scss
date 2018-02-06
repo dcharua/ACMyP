@@ -49,3 +49,9 @@
   background-image: url(/images/comercio.jpg);
   background-position: bottom;
 }
+@media  screen and (max-width : 1024px)  {
+  #comercio{
+    height: 65%;
+  }
+  #comerciob{ display: none;}
+}
