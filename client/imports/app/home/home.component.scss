@@ -141,7 +141,7 @@ p{
 	}
 }
 
-#abogados{
+#abogadosHome{
   background-image: url(/images/abogados.jpg);
   background-size: 100%;
   background-size: cover;
@@ -200,6 +200,9 @@ p{
 
 @media  screen and (max-width : 500px)  {
   #background{
+    .continuar{
+      bottom:5%;
+    }
     .logo{
       padding-top: 50%;
       padding-left: 5%;
@@ -231,7 +234,7 @@ p{
       }
     }
   }
-  #abogados{
+  #abogadosHome{
     h3{
       font-size: 24px;
     }
