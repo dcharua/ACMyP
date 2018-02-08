@@ -100,7 +100,7 @@ export const routes: Route[] = [
 	{ path: 'arias-en', component: AriasenComponent },
 	{ path: 'macias-en', component: MaciasenComponent },
 	{ path: 'prum-en', component: PrumenComponent },
-	{ path: 'attornys', component: CharuaenComponent },
+	{ path: 'attorneys', component: CharuaenComponent },
 	{ path: 'blog-en', component: BlogenComponent },
 	{ path: 'write', component: EscribirenComponent },
 
