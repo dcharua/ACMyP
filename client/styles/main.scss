@@ -100,6 +100,30 @@ p{
   font-family: 'MinionPro';
 }
 
+#navline{
+  top: 30px !important;
+}
+#lenbar{
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #3B436A;
+  a{
+    color: #fff;
+    font-family: 'MinionProBold';
+    font-size: 16px;
+    float: right;
+    margin-right: 31px;
+    text-transform: uppercase;
+    margin-top: 7px;
+  }
+}
+@media  screen and (max-width : 992px)  {
+  #lenbar{
+    display: none;
+  }
+}
 @media  screen and (max-width : 768px)  {
   .mybox{
     padding-left: 15% !important;
@@ -112,6 +136,7 @@ p{
 
   #navline{
     display: none !important;
+
   }
 }
 

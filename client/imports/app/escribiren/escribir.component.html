@@ -1,0 +1,51 @@
+<div id="lenbar"> <a [routerLink]="['/escribir']">Español</a></div>
+
+<div class="giveSpace"></div>
+<div class="yellowbox">
+  <h1>"Change your thoughts and you change your world."</h1>
+  <h5> This is for your english blog </h5>
+</div>
+
+
+<div class="myroundbox logbox">
+  <form class="col s12 center-align" [formGroup]="escribirForm" (ngSubmit)="escribir()">
+    <div class="row" id="log">
+      <div class="col s12">
+        <p class="strongp">:</p>
+        <div class="input-field">
+          <input  placeholder="Autor:" id="autor"  type="text" class="validate myform"  formControlName="autor" required>
+        </div>
+        <div class="input-field">
+          <input  placeholder="Titulo:" id="title"  type="text" class="validate myform"  formControlName="title" required>
+        </div>
+        <div class="input-field">
+          <textarea  placeholder="Articulo:" id="text" rows="20"  type="text" class="validate myform mytextarea"  formControlName="text" required></textarea>
+        </div>
+      </div>
+    </div>
+      <button  type="submit" style="font-size: 15px;padding-right: 15px;"  class="waves-effect waves-light btn"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">send</i> Enviar.</button>
+  </form>
+</div>
+
+
+<div id="error" class="col s12 m5 offset-m6">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <h1>Se añadio el articulo!</h1>
+</div>
+
+<div id="ver">
+  <div class="myroundbox">
+    <tr>
+      <th  style="width: 25%;">Autor</th>
+        <th  style="width: 40%;">Titulo</th>
+     <th  style="width: 25%;">fecha</th>
+     <th>Eliminar</th>
+   </tr >
+    <tr  *ngFor="let article of articles | async"  >
+     <td>{{article.autor}}</td>
+     <td>{{article.title}}</td>
+     <td>{{article.fecha}}</td>
+     <td><button (click)="borrar(article._id)" style="font-size: 15px;padding-right: 15px;" class="waves-effect waves-light btn"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">delete</i>Borrar</button></td>
+   </tr>
+  </div>
+</div>

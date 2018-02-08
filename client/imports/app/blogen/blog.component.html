@@ -1,0 +1,86 @@
+<div id="lenbar"> <a [routerLink]="['/blog']">Español</a></div>
+
+  <div id="home">
+    <div class="mycircle">
+      <div *ngIf="art0" class="row">
+        <div  class="col s8 offset-s2">
+          <p class="mas"> INSIGHT</p>
+          <p class="date">{{art0.fecha}}</p>
+          <h2 class="titulo"> {{art0.title}}</h2>
+          <hr>
+          <p>{{art0.text}}</p>
+          <p [routerLink]="['/article', art0._id]"  style="cursor:pointer; margin-top:20px !important;"class = "mas"> READ MORE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mybox">
+    <div *ngIf="art1" class="row">
+      <div class="col s12  m12 l4 offset-l2">
+        <div style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art1.fecha}}</p>
+          </div>
+          <h3>{{art1.title}}</h3>
+          <p class="texto">{{art1.text}}</p>
+          <button [routerLink]="['/article', art1._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>read more</button>
+        </div>
+      </div>
+
+      <div *ngIf="art2" class="col s12  m12 l4 ">
+        <div  style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art2.fecha}}</p>
+          </div>
+          <h3>{{art2.title}}</h3>
+          <p class="texto">{{art2.text}}</p>
+          <button [routerLink]="['/article', art2._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>read more</button>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="art3" class="row">
+      <div class="col s12  m12 l4 offset-l2">
+        <div style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art3.fecha}}</p>
+          </div>
+          <h3>{{art3.title}}</h3>
+          <p class="texto">{{art3.text}}</p>
+          <button [routerLink]="['/article', art3._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>read more</button>
+        </div>
+      </div>
+
+      <div  *ngIf="art4" class="col s12 m12 l4 ">
+        <div  style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art4.fecha}}</p>
+          </div>
+          <h3>{{art4.title}}</h3>
+          <p class="texto">{{art4.text}}</p>
+          <button [routerLink]="['/article', art4._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>read more</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row background">
+      <div *ngIf="art5" class="col s12 m10 l6 first">
+        <div [routerLink]="['/article']"  class="newsbox inback">
+          <div class="newsline">
+            <p class="news">News</p>
+            <p class="fecha">{{art5.fecha}}</p>
+          </div>
+          <h3>{{art5.title}}</h3>
+          <p class="texto">{{art5.text}}</p>
+          <button [routerLink]="['/article', art5._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>read more</button>
+
+        </div>
+      </div>
+    <div style="padding-bottom:50px;"></div>
+  </div>
+</div>

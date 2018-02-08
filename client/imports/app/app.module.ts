@@ -30,17 +30,32 @@ import { ArticleComponent } from './article/article.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { EscribirComponent } from './escribir/escribir.component';
-
 import { AUTH_DECLARATIONS } from "./auth/index";
-
-
-
-
-
 import { ContactoComponent } from './contacto/contacto.component';
-
-
 import { FooterComponent } from './footer/footer.component';
+
+import { HomeenComponent } from './homeen/home.component';
+import { NosotrosenComponent } from './nosotrosen/nosotros.component';
+import { CivilenComponent } from './civilen/civil.component';
+import { PenalenComponent } from './penalen/penal.component';
+import { PropiedadenComponent } from './propiedaden/propiedad.component';
+import { PrivacidadenComponent } from './privacidaden/privacidad.component';
+import { TelecomunicacionesenComponent } from './telecomunicacionesen/telecomunicaciones.component';
+import { FarmaceuticoenComponent } from './farmaceuticoen/farmaceutico.component';
+import { TecnologiaenComponent } from './tecnologiaen/tecnologia.component';
+import { LitigioenComponent } from './litigioen/litigio.component';
+import { CorporativoenComponent } from './corporativoen/corporativo.component';
+import { AdministrativoenComponent } from './administrativoen/administrativo.component';
+import { ComercioenComponent } from './comercioen/comercio.component';
+import { FusionenComponent } from './fusionen/fusion.component';
+import { InmobiliarioenComponent } from './inmobiliarioen/inmobiliario.component';
+import { CharuaenComponent } from './charuaen/charua.component';
+import { AriasenComponent } from './ariasen/arias.component';
+import { MaciasenComponent } from './maciasen/macias.component';
+import { PrumenComponent } from './prumen/prum.component';
+import { BlogenComponent } from './blogen/blog.component';
+import { EscribirenComponent } from './escribiren/escribir.component';
+import { ContactoenComponent } from './contactoen/contacto.component';
 
 
 @NgModule({
@@ -74,6 +89,29 @@ import { FooterComponent } from './footer/footer.component';
         SignupComponent,
         EscribirComponent,
         FooterComponent,
+        HomeenComponent,
+        HomeComponent,
+        NosotrosenComponent,
+        ContactoenComponent,
+        CivilenComponent,
+        PenalenComponent,
+        PropiedadenComponent,
+        PrivacidadenComponent,
+        TelecomunicacionesenComponent,
+        FarmaceuticoenComponent,
+        TecnologiaenComponent,
+        LitigioenComponent,
+        CorporativoenComponent,
+        AdministrativoenComponent,
+        ComercioenComponent,
+        FusionenComponent,
+        InmobiliarioenComponent,
+        CharuaenComponent,
+        AriasenComponent,
+        MaciasenComponent,
+        PrumenComponent,
+        BlogenComponent,
+        EscribirenComponent,
 
     ],
     // Entry Components

@@ -2,12 +2,15 @@ module.exports = {
   servers: {
     one: {
       // TODO: set host address, username, and authentication method
-      host: 'mx46',
+      host: '192.185.131.121',
       username: 'acmypcom',
       // pem: '../../valiara.pem'
-      password: 'zqFoD750n1'
+      password: 'zqFoD750n1',
       // or neither for authenticate from ssh-agent
-    }
+      opts: {
+          port: 22
+        }
+      }
   },
 
   app: {

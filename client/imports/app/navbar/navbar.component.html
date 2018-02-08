@@ -1,19 +1,19 @@
 <div class="valign-wrapper" id="navbar">
 	<div class="navitem">
+		<div class="esp">
 		<div id="userin" *ngIf="user" style="position: absolute; left: 10px; top: 10px;" >
 			<button  style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn" (click)="logout()"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">exit_to_app</i>Logout</button>
 			<button [routerLink]="['/escribir']" style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">border_color</i>Escribir</button>
 			<span style="vertical-align:middle;">{{ user.emails[0].address }}</span>
 		</div>
+
 		<a [routerLink]="['/']" >
 			<p id ="inicio">Inicio</p>
 		</a>
 
-
 		<a[routerLink]="['/nosotros']" >
 			<p id="nosotros">Nosotros</p>
 		</a>
-
 
 		<div class="mydropdown">
 			<a style="margin-right:30px;" >
@@ -85,16 +85,110 @@
 		<a style="margin-right:30px;" [routerLink]="['/contacto']" >
 			<p id="contacto">Contacto</p>
 		</a>
+		</div>
+
+
+
+		<div class="ing">
+			<div id="userin" *ngIf="user" style="position: absolute; left: 10px; top: 10px;" >
+				<button  style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn" (click)="logout()"><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">exit_to_app</i>Logout</button>
+				<button [routerLink]="['/write']" style="font-size: 15px;padding-right: 15px;"class="waves-effect waves-light btn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">border_color</i>Write</button>
+				<span style="vertical-align:middle;">{{ user.emails[0].address }}</span>
+			</div>
+		<a [routerLink]="['/home']" >
+			<p id ="inicio">Home</p>
+		</a>
+
+
+		<a[routerLink]="['/about']" >
+			<p id="nosotros">our firm</p>
+		</a>
+
+
+		<div class="mydropdown">
+			<a style="margin-right:30px;" >
+				<p id="servicios">Services</p>   <img class ="flechaDown" src="/icons/FlechaAbajo.png" >
+			</a>
+		<div class="mydropdown-content">
+			<div class="row">
+				<div style="padding-top:20px; padding-left: 20px;"class=" col s6">
+					<a[routerLink]="['/civil-en']" >
+						<p>Civil, Family and Commercial Law Services</p>
+					</a>
+					<a[routerLink]="['/criminal']" >
+						<p>Criminal Law Services</p>
+					</a>
+					<a[routerLink]="['/property']" >
+						<p>Intellectual Property and Entertainment  </p>
+					</a>
+					<a[routerLink]="['/privacy']" >
+						<p>Data Privacy and Personal Data</p>
+					</a>
+				</div>
+				<div style="padding-top:20px;" class="col s3">
+					<a[routerLink]="['/telecomunications']" >
+						<p>Telecommunications</p>
+					</a>
+					<a[routerLink]="['/pharmaceutical']" >
+						<p>Pharmaceutical</p>
+					</a>
+					<a[routerLink]="['/technology']" >
+						<p>Technology</p>
+					</a>
+					<a[routerLink]="['/litigation']" >
+						<p>Litigation and Counseling</p>
+					</a>
+				</div>
+				<div style="padding-top:20px;" class=" col s3">
+					<a[routerLink]="['/corporative']" >
+						<p>Corporate</p>
+					</a>
+					<a[routerLink]="['/administartive']" >
+						<p>Admnistrative Law Services</p>
+					</a>
+					<a[routerLink]="['/trade']" >
+						<p>International Trade</p>
+					</a>
+					<a[routerLink]="['/merge']" >
+						<p>Margers and Acquisitions</p>
+					</a>
+					<a style="margin:0 !important"[routerLink]="['/realestate']" >
+						<p>Real Estate</p>
+					</a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		<a [routerLink]="['/attorneys']" >
+			<p id="abogados">attorneys</p>
+		</a>
+
+
+		<a[routerLink]="['/blog-en']" >
+			<p id="blog">Blog</p>
+		</a>
+
+
+		<a style="margin-right:30px;" [routerLink]="['/contact']" >
+			<p id="contacto">Contact</p>
+		</a>
+		</div>
+
 	</div>
 </div>
 
 <nav id="mobile">
-	 <div class="nav-wrapper">
+	 <div class="nav-wrapper esp">
 		 <a [routerLink]="['/']" class="brand-logo">ACM&P</a>
 		 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		 <ul class="side-nav" id="mobile-demo">
 			 <li><a  [routerLink]="['/']">Inicio</a></li>
-			 <li><a class="dropdown-button" data-activates="menu_escrow_accounts" data-beloworigin="true" href="javascript:;" >Nosotros <img class ="arrowMob" src="/icons/FlechaAbajo.png" ></a></li>
+			 <li><a  [routerLink]="['/nosotros']">Nosotros</a></li>
+
+			 <li><a class="dropdown-button" data-activates="menu_escrow_accounts" data-beloworigin="true" href="javascript:;" >Servicios <img class ="arrowMob" src="/icons/FlechaAbajo.png" ></a></li>
 			 	<ul id="menu_escrow_accounts" class="dropdown-content myul">
 					<li>
 						<a[routerLink]="['/civil']" >Derecho Civil, Familiar y Mercantil</a>
@@ -139,5 +233,88 @@
 			 <li><a  [routerLink]="['/abogados']">Abogados</a></li>
 			 <li><a  [routerLink]="['/blog']">Blog</a></li>
 			 <li><a  [routerLink]="['/contacto']">Contacto</a></li>
-	 </div>
- </nav>
+			 <li><a  [routerLink]="['/home']">English</a></li>
+		 </div>
+
+
+	<div class="nav-wrapper ing">
+		<a [routerLink]="['/home']" class="brand-logo">ACM&P</a>
+		<a href="#" data-activates="mobile-demo2" class="button-collapse"><i class="material-icons">menu</i></a>
+		<ul class="side-nav" id="mobile-demo2">
+				 <li><a  [routerLink]="['/home']">Home</a></li>
+				 <li><a  [routerLink]="['/about']">Our Firm</a></li>
+
+				 <li><a class="dropdown-button" data-activates="menu_escrow_accounts2" data-beloworigin="true" href="javascript:;" >Services <img class ="arrowMob" src="/icons/FlechaAbajo.png" ></a></li>
+					<ul id="menu_escrow_accounts2" class="dropdown-content myul">
+						<li>
+							<a[routerLink]="['/civil-en']" >
+								Civil, Family and Commercial Law
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/criminal']" >
+							Criminal Law Services
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/property']" >
+								Intellectual Property and Entertainment
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/privacy']" >
+								Data Privacy and Personal Data
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/telecomunications']" >
+								Telecommunications
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/pharmaceutical']" >
+								Pharmaceutical
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/technology']" >
+								Technology
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/litigation']" >
+								Litigation and Counseling
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/corporative']" >
+								Corporate
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/administartive']" >
+								Admnistrative Law Services
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/trade']" >
+								International Trade
+							</a>
+						</li>
+						<li>
+							<a[routerLink]="['/merge']" >
+								Margers and Acquisitions
+							</a>
+						</li>
+						<li>
+							<a [routerLink]="['/realestate']" >
+								Real Estate
+							</a>
+						</li>
+					</ul>
+				 <li><a  [routerLink]="['/attorneys']">Attorneys</a></li>
+				 <li><a  [routerLink]="['/blog-en']">Blog</a></li>
+				 <li><a  [routerLink]="['/contact']">Contact</a></li>
+				 <li><a  [routerLink]="['/']">Español</a></li>
+			 </div>
+	</nav>

@@ -23,6 +23,12 @@ export class BlogComponent implements OnInit {
 	public art3: any;
 	public art4: any;
 	public art5: any;
+	public art6: any;
+	public art7: any;
+	public art8: any;
+	public art9: any;
+	public art10: any;
+	public art11: any;
 
 	articleSub: Subscription;
 	articles: any;
@@ -39,10 +45,16 @@ export class BlogComponent implements OnInit {
 		this.art3="";
 		this.art4="";
 		this.art5="";
+		this.art6="";
+		this.art7="";
+		this.art8="";
+		this.art9="";
+		this.art10="";
+		this.art11="";
 
 		this.articleSub = MeteorObservable.subscribe('articles').subscribe(()=>{
 			Tracker.autorun(() => {
-				this.articles = Articles.find({}, {sort:{date: -1}, limit: 6 }).fetch();
+				this.articles = Articles.find({}, {sort:{date: -1}, limit: 12}).fetch();
 				this.art0 = this.articles[0];
 				this.art0.text = this.art0.text.substring(0, 70) + '...';
 				this.art0.title = this.art0.title.substring(0, 27) + '..';
@@ -69,6 +81,31 @@ export class BlogComponent implements OnInit {
 				this.art5 = this.articles[5];
 				this.art5.text = this.art5.text.substring(0, 450) + '...';
 				this.art5.title = this.art5.title.substring(0, 30) + '..';
+
+				this.art6 = this.articles[6];
+				this.art6.text = this.art6.text.substring(0, 450) + '...';
+				this.art6.title = this.art6.title.substring(0, 30) + '..';
+
+				this.art7 = this.articles[7];
+				this.art7.text = this.art7.text.substring(0, 450) + '...';
+				this.art7.title = this.art7.title.substring(0, 30) + '..';
+
+				this.art8 = this.articles[8];
+				this.art8.text = this.art8.text.substring(0, 450) + '...';
+				this.art8.title = this.art8.title.substring(0, 30) + '..';
+
+				this.art9 = this.articles[9];
+				this.art9.text = this.art9.text.substring(0, 450) + '...';
+				this.art9.title = this.art9.title.substring(0, 30) + '..';
+
+				this.art10 = this.articles[10];
+				this.art10.text = this.art10.text.substring(0, 450) + '...';
+				this.art10.title = this.art10.title.substring(0, 30) + '..';
+
+				this.art11 = this.articles[11];
+				this.art11.text = this.art11.text.substring(0, 450) + '...';
+				this.art11.title = this.art11.title.substring(0, 30) + '..';
+
 			});
 		});
  }

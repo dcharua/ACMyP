@@ -1,0 +1,59 @@
+#navline{
+  height: 62px;
+  position: absolute;
+  background: #fff;
+  top:0;
+  width: 100%;
+}
+#propiedad{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75%;
+  background-image: url(/images/propiedad2.jpg);
+  background-position: center;
+    .flechaDown{
+      width: 60px;
+      position: absolute;
+      left: 47%;
+      bottom: 1%;
+    }
+}
+
+.mybox{
+  background-color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  h2{
+    padding-top: 50px;
+    color:  #3B436A;
+    font-size: 30px;
+    font-family: 'MinionProBold';
+    text-align: center;
+  }
+  p{
+    color: #000;
+    font-size: 20px;
+    font-family: 'MinionPro';
+    text-align: left;
+  }
+}
+
+#propiedadb{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
+  background-image: url(/images/propiedad.jpg);
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+@media  screen and (max-width : 1024px)  {
+  #propiedad{
+    height: 65%;
+  }
+  #propiedadb{ display: none;}
+}

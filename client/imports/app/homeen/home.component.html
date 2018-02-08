@@ -1,0 +1,122 @@
+<div id="background">
+  <div id="lenbar"> <a a [routerLink]="['/']">Español</a></div>
+  <div class="logo"><img id ="logohome" src="/logos/LOGO.png" alt="ACMyP" ></div>
+  <a href="#about" class="continuar">
+    <p>CONTINUE</p>
+    <img class ="flechaDown" src="/icons/FlechaAbajo.png" alt="ACMyP" >
+  </a>
+</div>
+
+<div id="about">
+  <h5 style="padding-top:70px;"> Arias, Charua, Macías & Prum is a law firm whose members <br>
+offer exceptional legal service with a focus on personalized attention..</h5>
+  <div style="margin-top:70px;">
+    <p>Our law firm is composed by attorneys with long-standing and rooted reputations for
+        rendering high-level legal services, offering ethical, professional attention to our clients.
+        We require our legal staff to continually upgrade their legal education which allows them
+        to remain at the cutting edge of law.</p>
+<p>One-on-one attention to our clients is provided through knowledge of different industries
+  and service sectors, preventing contingencies and maintaining open communication that
+  allows us to inform of legislation changes that could affect our client’s interests.</p>
+
+    <p style="padding-bottom:70px;">  We combine tradition and innovation, from which derives our fundamental principle of
+      recognition as our clients’ permanent advisors, enabling them to obtain real and direct
+      benefits.</p>
+  </div>
+
+  <!-- La portada del cover (ej. /images/covers/flirt.jpg) deben de ser de 900 x 900 px -->
+  <div id="projects">
+    <h1>MAIN AREAS PRACTICE</h1>
+    <p >Imilisque telutura, P. Satium iurem optissimus, que facieni hilicta terede quitis conlos
+    intractus cum ut audes dem et? Issoliu que di, firmis hosus, sed con tam aventiam hil
+    hilness endericum sultum ina, nihilicit alemer accital eruncul vilicas cum te con Ita, num
+    vid re poporunteris ocura det iamuntum P. Que is, Cas igit pra L. Habem tem tu iam iam
+    det? Nossulius, quonostis, ublius veri pere comniquam deris</p>
+      <div class="container">
+          <div class="row" id="projects-wrapper">
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/technology']">
+                      <img class="box-image" src="/images/tecnologia.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Technology</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/property']" title="Valiara">
+                      <img class="box-image" src="/images/propiedad.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Intellectual Property and Entertainment</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/civil-en']">
+                      <img class="box-image" src="/images/civil.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Civil, Family and Commercial Law Services</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/telecommunications']">
+                      <img class="box-image" src="/images/tele.jpeg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Telecommunications</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/pharmaceutical']">
+                      <img class="box-image" src="/images/farma.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Pharmaceutical</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col s6 m4 box">
+                  <a [routerLink]="['/mergers']">
+                      <img class="box-image" src="/images/fusion.jpg">
+                      <div class="box-wrap valign-wrapper">
+                          <div class="valign text">
+                              <p>Margers & Acquisitions</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="abogadosHome">
+    <div style="width: 30%;margin-left: 35%;">
+    <h3>ATTORNEYS</h3>
+    <a [routerLink]="['/arias-en']" class="abogado">
+      <h2 style="padding-top:70px;">OSCAR</h2>
+      <p>Arias Corona</p>
+    </a>
+    <a [routerLink]="['/charua-en']" class="abogado">
+      <h2>Elias</h2>
+      <p>Charua García</p>
+    </a>
+    <a [routerLink]="['/macias-en']" class="abogado">
+      <h2>David</h2>
+      <p>Macías León</p>
+    </a>
+    <a [routerLink]="['/prum-en']" class="abogado">
+      <h2>Daniel</h2>
+      <p style="padding-bottom:70px;">Prum Charua</p>
+    </a>
+  </div>
+</div>
+</div>

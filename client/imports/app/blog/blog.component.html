@@ -1,5 +1,6 @@
 
   <div id="home">
+    <div id="lenbar"> <a [routerLink]="['/blog-en']">English</a></div>
     <div class="mycircle">
       <div *ngIf="art0" class="row">
         <div  class="col s8 offset-s2">
@@ -67,16 +68,94 @@
     </div>
     </div>
 
-    <div class="row background">
-      <div *ngIf="art5" class="col s12 m10 l6 first">
-        <div [routerLink]="['/article']"  class="newsbox inback">
+    <div *ngIf="art5" class="row">
+      <div class="col s12  m12 l4 offset-l2">
+        <div style="margin-right:40px;"class="newsbox">
           <div class="newsline">
-            <p class="news">News</p>
+            <p class="news">news</p>
             <p class="fecha">{{art5.fecha}}</p>
           </div>
           <h3>{{art5.title}}</h3>
           <p class="texto">{{art5.text}}</p>
           <button [routerLink]="['/article', art5._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+        </div>
+      </div>
+
+      <div *ngIf="art6" class="col s12  m12 l4 ">
+        <div  style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art6.fecha}}</p>
+          </div>
+          <h3>{{art6.title}}</h3>
+          <p class="texto">{{art6.text}}</p>
+          <button [routerLink]="['/article', art6._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="art7" class="row">
+      <div class="col s12  m12 l4 offset-l2">
+        <div style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art7.fecha}}</p>
+          </div>
+          <h3>{{art7.title}}</h3>
+          <p class="texto">{{art7.text}}</p>
+          <button [routerLink]="['/article', art7._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+        </div>
+      </div>
+
+      <div *ngIf="art8" class="col s12  m12 l4 ">
+        <div  style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art8.fecha}}</p>
+          </div>
+          <h3>{{art8.title}}</h3>
+          <p class="texto">{{art8.text}}</p>
+          <button [routerLink]="['/article', art8._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="art9" class="row">
+      <div class="col s12  m12 l4 offset-l2">
+        <div style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art9.fecha}}</p>
+          </div>
+          <h3>{{art9.title}}</h3>
+          <p class="texto">{{art9.text}}</p>
+          <button [routerLink]="['/article', art1._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+        </div>
+      </div>
+
+      <div *ngIf="art10" class="col s12  m12 l4 ">
+        <div  style="margin-right:40px;"class="newsbox">
+          <div class="newsline">
+            <p class="news">news</p>
+            <p class="fecha">{{art10.fecha}}</p>
+          </div>
+          <h3>{{art10.title}}</h3>
+          <p class="texto">{{art10.text}}</p>
+          <button [routerLink]="['/article', art11._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row background">
+      <div *ngIf="art11" class="col s12 m10 l6 first">
+        <div   class="newsbox inback">
+          <div class="newsline">
+            <p class="news">News</p>
+            <p class="fecha">{{art11.fecha}}</p>
+          </div>
+          <h3>{{art11.title}}</h3>
+          <p class="texto">{{art11.text}}</p>
+          <button [routerLink]="['/article', art11._id]" class="waves-effect waves-light btn mybtn" ><i style="font-size: 15px;padding-left: 15px;"class="material-icons left">loupe</i>leer mas</button>
 
         </div>
       </div>

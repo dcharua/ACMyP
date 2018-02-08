@@ -1,0 +1,164 @@
+#home{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/blog.jpg);
+  height: -webkit-fill-available;
+  background-position: center;
+  .mycircle{
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:visible;
+    text-align: center;
+    display: inline-block;
+
+  .date{
+    color: #4e4e4e;
+    text-transform: UPPERCASE;
+    font-size: 13px;
+  }
+  .titulo{
+    font-size: 20px;
+    text-transform: UPPERCASE;
+    margin: 26px;
+    font-family: 'MinionProBold';
+    color:  #3B436A;
+    overflow: hidden;
+  }
+  hr{
+    color: #3B436A;
+    width: 70%;
+    border: 1px solid;
+    margin-top: -20px;
+  }
+  p{
+    font-family: 'MinionPro';
+    color: #000;
+  }
+  .mas{
+    overflow: visible;
+    background-color:  #3B436A;
+    color: white;
+    padding: 0px 15px;
+    padding-top: 3px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 60px;
+    border-radius: 12%;
+
+  }
+}
+}
+
+.newsbox{
+  margin-top: 50px;
+  border: 2px solid  #3B436A;
+  cursor: pointer;
+}
+.newsline{
+  background:#3B436A;
+  height: 50px;
+}
+.news{
+  margin-top: 15px;
+  display: inline-block;
+  color: #fff;
+  margin-left: 15px;
+  font-family: 'MinionProBold';
+  font-size: 15px;
+  text-transform: UPPERCASE;
+}
+
+.fecha{
+  margin-top: 15px;
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+  color: #fff;
+  text-transform: UPPERCASE;
+  font-size: 14px;
+}
+h3{
+  margin: 50px 30px;
+  font-size: 23px;
+  font-family: 'MinionProBold';
+  text-transform: UPPERCASE;
+  color:#3B436A;
+}
+.texto{
+  margin: 0 30px 10px 30px;
+  font-family: 'MinionPro';
+  color:#000;
+  font-size: 13px;
+  height: 210px;
+  overflow: hidden;
+}
+
+.background{
+  margin: 60px 16.666666%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/blog2.jpg);
+  height: 530px;
+  border: 1px solid #3B436A;
+  background-position: center;
+  .inback{
+    background: #fff;
+    margin-right: 40px !important;
+    margin-left: 20px !important;
+    margin-top: 30px !important;
+  }
+}
+
+.mybtn{
+  font-size: 15px;
+  padding-right: 15px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media  screen and (max-width : 500px)  {
+  .mybox{
+     padding-left: 10% !important;
+     padding-right: 10% !important;
+  }
+  #home{
+    .mycircle{
+      width: 300px;
+      height: 300px;
+      .mas{
+        padding: 0px 10px;
+        margin-top: 30px;
+      }
+      .titulo{
+        font-size: 16px !important;
+      }
+      .date{
+        margin: 6px !important;
+        font-size: 12px;
+      }
+      p{
+        font-size: 13px !important;
+      }
+    }
+  }
+  .newsbox{
+    margin-right: 0 !important;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .background{
+    margin: 0 !important;
+  }
+}

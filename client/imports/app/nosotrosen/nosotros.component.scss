@@ -1,0 +1,44 @@
+#nosotros{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: -webkit-fill-available;
+  background-image: url(/images/nosotros.jpeg);
+  background-position: top;
+
+    .logo{
+      padding-top: 15%;
+      text-align: left;
+    }
+    .logo img {
+    width: 500px;
+    }
+    .flechaDown{
+      width: 60px;
+      position: absolute;
+      left: 47%;
+      bottom: 2%;
+    }
+}
+
+.mybox{
+  background-color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  h2{
+    padding-top: 50px;
+    color:  #3B436A;
+    font-size: 30px;
+    font-family: 'MinionProBold';
+    text-align: center;
+  }
+  p{
+    color: #000;
+    font-size: 20px;
+    font-family: 'MinionPro';
+    text-align: center;
+    margin: 0;
+  }
+}

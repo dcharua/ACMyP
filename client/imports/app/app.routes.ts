@@ -26,6 +26,28 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { EscribirComponent } from './escribir/escribir.component';
 
+import { HomeenComponent } from './homeen/home.component';
+import { NosotrosenComponent } from './nosotrosen/nosotros.component';
+import { CivilenComponent } from './civilen/civil.component';
+import { PenalenComponent } from './penalen/penal.component';
+import { PropiedadenComponent } from './propiedaden/propiedad.component';
+import { PrivacidadenComponent } from './privacidaden/privacidad.component';
+import { TelecomunicacionesenComponent } from './telecomunicacionesen/telecomunicaciones.component';
+import { FarmaceuticoenComponent } from './farmaceuticoen/farmaceutico.component';
+import { TecnologiaenComponent } from './tecnologiaen/tecnologia.component';
+import { LitigioenComponent } from './litigioen/litigio.component';
+import { CorporativoenComponent } from './corporativoen/corporativo.component';
+import { AdministrativoenComponent } from './administrativoen/administrativo.component';
+import { ComercioenComponent } from './comercioen/comercio.component';
+import { FusionenComponent } from './fusionen/fusion.component';
+import { InmobiliarioenComponent } from './inmobiliarioen/inmobiliario.component';
+import { CharuaenComponent } from './charuaen/charua.component';
+import { AriasenComponent } from './ariasen/arias.component';
+import { MaciasenComponent } from './maciasen/macias.component';
+import { PrumenComponent } from './prumen/prum.component';
+import { BlogenComponent } from './blogen/blog.component';
+import { EscribirenComponent } from './escribiren/escribir.component';
+import { ContactoenComponent } from './contactoen/contacto.component';
 
 
 
@@ -57,6 +79,30 @@ export const routes: Route[] = [
 	{ path: 'entrar', component: LoginComponent },
 	{ path: 'nuevousuario', component: SignupComponent },
 	{ path: 'escribir', component: EscribirComponent },
+
+	{ path: 'home', component: HomeenComponent },
+	{ path: 'about', component: NosotrosenComponent },
+	{ path: 'contact', component: ContactoenComponent },
+	{ path: 'civil-en', component: CivilenComponent },
+	{ path: 'criminal', component: PenalenComponent },
+	{ path: 'property', component: PropiedadenComponent },
+	{ path: 'privacy', component: PrivacidadenComponent },
+	{ path: 'telecomunications', component: TelecomunicacionesenComponent },
+	{ path: 'pharmaceutical', component: FarmaceuticoenComponent },
+	{ path: 'technology', component: TecnologiaenComponent },
+	{ path: 'litigation', component: LitigioenComponent },
+	{ path: 'corporative', component: CorporativoenComponent },
+	{ path: 'administrative', component: AdministrativoenComponent },
+	{ path: 'trade', component: ComercioenComponent },
+	{ path: 'merge', component: FusionenComponent },
+	{ path: 'realestate', component: InmobiliarioenComponent },
+	{ path: 'charua-en', component: CharuaenComponent },
+	{ path: 'arias-en', component: AriasenComponent },
+	{ path: 'macias-en', component: MaciasenComponent },
+	{ path: 'prum-en', component: PrumenComponent },
+	{ path: 'attornys', component: CharuaenComponent },
+	{ path: 'blog-en', component: BlogenComponent },
+	{ path: 'write', component: EscribirenComponent },
 
 	{ path: '**', component: HomeComponent }
 ];
