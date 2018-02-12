@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 100%;
   height: -webkit-fill-available;
   background-image: url(/images/nosotros.jpeg);
   background-position: top;
@@ -40,5 +41,39 @@
     font-family: 'MinionPro';
     text-align: center;
     margin: 0;
+  }
+}
+
+@media  screen and (max-width : 768px)  {
+  #nosotros{
+    .logo{
+      padding-top: 30%;
+      padding-left: 5%;
+      text-align: left;
+    }
+    .logo img {
+    width: 400px;
+    }
+  }
+}
+
+@media  screen and (max-width : 500px)  {
+  #nosotros{
+    .logo{
+      padding-top: 30%;
+      padding-left: 5%;
+      text-align: left;
+    }
+    .logo img {
+    width: 300px;
+    }
+  }
+
+}
+@media  screen and (max-width : 350px)  {
+  #nosotros{
+    .logo img {
+    width: 200px;
+    }
   }
 }
